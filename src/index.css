@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"),
+   url("./fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+  font-weight: medium;
+  }
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"),
+    url("./fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+ @font-face {
+  font-family: "Arimo";
+  src: local("Arimo"),
+  url("./fonts/Arimo/Arimo-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+}
+  
