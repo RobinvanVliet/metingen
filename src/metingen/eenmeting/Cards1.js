@@ -14,65 +14,65 @@ function Cards(){
     <>
     <Container>
       <Section>
-        <Card COLOR={COLOR.LIGHT_PURPLE}>
+        <Card>
         <ContentContainer>
           <Icon>
             <Icon1/>
           </Icon>
-          <Title FONTFAMILIES={FONTFAMILIES.POPPINS} FONTWEIGHTS={FONTWEIGHTS.POPPINS_1}>Uses Client First</Title>
-          <Text FONTFAMILIES={FONTFAMILIES.ARIMO} FONTWEIGHTS={FONTWEIGHTS.ARIMO_2}>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </Text>
+          <Title>Uses Client First</Title>
+          <Text>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </Text>
         </ContentContainer>
         </Card>
       
-        <Card COLOR={COLOR.LAVENDER_PURPLE}>
+        <Card>
         <ContentContainer>
           <Icon>
             <Icon2/>
           </Icon>
-          <Title FONTFAMILIES={FONTFAMILIES.POPPINS} FONTWEIGHTS={FONTWEIGHTS.POPPINS_1}>Two Free Revision Round</Title>
-          <Text FONTFAMILIES={FONTFAMILIES.ARIMO} FONTWEIGHTS={FONTWEIGHTS.ARIMO_2}>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </Text>
+          <Title>Two Free Revision Round</Title>
+          <Text>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </Text>
         </ContentContainer>
         </Card>
 
-        <Card COLOR={COLOR.FRESH_PURPLE}>
+        <Card>
         <ContentContainer>
           <Icon>
             <Icon3/>
           </Icon>
-          <Title FONTFAMILIES={FONTFAMILIES.POPPINS} FONTWEIGHTS={FONTWEIGHTS.POPPINS_1}>Template Customization</Title>
-          <Text FONTFAMILIES={FONTFAMILIES.ARIMO} FONTWEIGHTS={FONTWEIGHTS.ARIMO_2}>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </Text>
+          <Title>Template Customization</Title>
+          <Text>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </Text>
         </ContentContainer>
         </Card> 
       </Section>
 
       <Section>
-      <Card COLOR={COLOR.LIGHT_BLUE}>
+      <Card>
           <ContentContainer>
             <Icon>
               <Icon4/>
             </Icon>
-            <Title FONTFAMILIES={FONTFAMILIES.POPPINS} FONTWEIGHTS={FONTWEIGHTS.POPPINS_1}>24/7</Title>
-            <Text FONTFAMILIES={FONTFAMILIES.ARIMO} FONTWEIGHTS={FONTWEIGHTS.ARIMO_2}>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </Text>
+            <Title>24/7</Title>
+            <Text>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </Text>
           </ContentContainer>
         </Card>
 
-        <Card COLOR={COLOR.BABY_BLUE}> 
+        <Card> 
           <ContentContainer>
             <Icon>
               <Icon5/>
             </Icon>
-            <Title FONTFAMILIES={FONTFAMILIES.POPPINS} FONTWEIGHTS={FONTWEIGHTS.POPPINS_1}>Quick Delivery</Title>
-            <Text FONTFAMILIES={FONTFAMILIES.ARIMO} FONTWEIGHTS={FONTWEIGHTS.ARIMO_2}>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </Text>
+            <Title>Quick Delivery</Title>
+            <Text>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </Text>
           </ContentContainer>
         </Card>
 
-        <Card COLOR={COLOR.SKY_BLUE}>
+        <Card>
         <ContentContainer>
             <Icon>
               <Icon6/>
             </Icon>
-            <Title FONTFAMILIES={FONTFAMILIES.POPPINS} FONTWEIGHTS={FONTWEIGHTS.POPPINS_1}>Hands-on approach</Title>
-            <Text FONTFAMILIES={FONTFAMILIES.ARIMO} FONTWEIGHTS={FONTWEIGHTS.ARIMO_2}>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </Text>
+            <Title>Hands-on approach</Title>
+            <Text>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </Text>
           </ContentContainer>
         </Card>
       </Section>
@@ -97,7 +97,6 @@ const Card = styled.div`
   margin-top: 10px;
   width: 28%;
   height: 280px;
-  background-color: ${props => props.COLOR};
 `;
 
 const ContentContainer = styled.div`
@@ -109,8 +108,6 @@ const Icon = styled.div`
 `;
 
 const Title = styled.div`
-  font-weight: ${props => props.FONTWEIGHTS};
-  font-family: ${props => props.FONTFAMILIES};
   font-size: 24px;
   line-height: 36px;
   padding-bottom: 1rem;
@@ -119,31 +116,8 @@ const Title = styled.div`
 
 const Text = styled.div`
   font-size: 16px;
-  font-family: ${props => props.FONTFAMILIES};
-  font-weight: ${props => props.FONTWEIGHTS};
   line-height: 28px;
   padding-right: 2rem;
 `;
-
-const FONTWEIGHTS = {
-  POPPINS_0: "SemiBold",
-  POPPINS_1: "Medium",
-  ARIMO_2: "Regular",
-}
-
-const FONTFAMILIES = {
-  POPPINS: "Poppins",
-  ARIMO: "Arimo",
-}
-
-const COLOR = {
-  LAVENDER_PURPLE: "#ced0ff",
-  LIGHT_PURPLE: "#e8e0ff",
-  LIGHT_BLUE: "#eaf5ff",
-  BABY_BLUE: "#d9edff",
-  SKY_BLUE: "#bbd2ff",
-  CLOUDY_PURPLE: "#f9faff",
-  FRESH_PURPLE: "#e4ecff",
-}
-
+ 
 export default Cards;
